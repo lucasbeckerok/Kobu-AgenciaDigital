@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+}
+
+.titulo {
+  margin-top: 90px;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  font-size: 2em;
+}
+
+h1, h2, h3, h4 p {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.tarjetaServicio {
+  margin: 15px;
+  padding: 5px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  background-color: white;
+  -webkit-transition: all 350ms;
+  transition: all 350ms;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.tarjetaServicio:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.tarjetaServicio__img {
+  margin: 10px;
+  width: 80px;
+}
+
+.tarjetaServicio__titulo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tarjetaServicio__parrafo {
+  font-size: 15px;
+  padding: 5px;
+}
+
+.cajaSomos {
+  padding: 15px;
+  background-color: #EBD017;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: -1px 0px 41px 2px rgba(0, 0, 0, 0.44);
+  -webkit-box-shadow: -1px 0px 41px 2px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: -1px 0px 41px 2px rgba(0, 0, 0, 0.44);
+}
+
+.cajaSomos__titulo {
+  font-size: 1.7em;
+  letter-spacing: 0.1em;
+  line-height: 1.4em;
+  font-weight: 700;
+}
+
+.cajaSomos__parrafo {
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+
+.cajaTeam {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.cajaTeam__titulo {
+  font-size: 1.7em;
+  letter-spacing: 0.1em;
+  line-height: 1.4em;
+  font-weight: 700;
+}
+
+.tarjetaTeam {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.tarjetaTeam__img {
+  margin: 10px;
+  width: 100px;
+}
+
+.tarjetaTeam__titulo {
+  font-size: 20px;
+}
+
+.tarjetaTeam__parrafo {
+  font-size: 16px;
+}
+
+.portfolio__img {
+  width: 300px;
+  -webkit-transition: width 1.5s;
+  transition: width 1.5s;
+}
+
+.portfolio__img:hover {
+  width: 350px;
+}
+
+.btn-send {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.help-block.with-errors {
+  color: #4900F1;
+  margin-top: 5px;
+}
+
+.card {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=estilos.css.map */

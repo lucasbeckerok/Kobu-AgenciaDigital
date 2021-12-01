@@ -1,0 +1,26 @@
+// RESET
+*{
+    margin:0;
+    padding:0;
+    box-sizing: 0;
+}
+// DISENO TITULOS H2
+.titulo{
+    margin-top:90px;
+    font-weight:700;
+    letter-spacing:0.2rem;
+    font-size:2em;
+}
+// ANIMACIONES Y TRANSICIONES
+h1,h2,h3,h4 p{
+    animation-duration: 3s;
+    animation-name: aparecer;
+ }
+ @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
