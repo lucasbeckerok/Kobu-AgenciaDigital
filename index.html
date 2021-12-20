@@ -187,7 +187,8 @@
 			  <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12">
 				<div class="cajaSomos">
 					<h3 class="cajaSomos__titulo">Presentación</h3>
-					<iframe width="400" height="230" src="https://www.youtube.com/embed/M9Ou6B_fnO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<!--Video Presentacion-->
+					<iframe width="280" height="160" src="https://www.youtube.com/embed/M9Ou6B_fnO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<h3 class="cajaSomos__titulo">Quienes Somos</h3>
 					<p class="cajaSomos__parrafo">Somos una consultora de Marketing Digital especializada en desarrollar estrategias, identificar Insights y analizar datos. Potenciamos tu marca y anticipamos las necesidades de la audiencia, optimizando la performance de inversiones y recursos.</p>
 				</div>
@@ -289,80 +290,61 @@
 
 		</div>
 	  </div>
-
+	  
 	  <!-- FORMULARIO DE CONTACTO -->
-	  <div id="contacto" class="container"> 
+	  <div id="contacto" class="container py-3 min-vh-100 d-flex flex-column">
 		<div class=" text-center mt-5 ">
         	<h2 class="titulo">Contacto</h2>
 			<div class="mx-auto bg-warning pt-1" style="width: 150px; margin-bottom: 20px;"></div>
    		</div>
-    	<div class="row">
-        <div class="col-lg-7 mx-auto" style="margin-bottom:50px;">
-            <div class="card mt-2 mx-auto p-4 bg-light">
-                <div class="card-body bg-light">
-                    <div class="container">
-
-                        <form id="contact-form" role="form">
-                            <div class="controls">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group"> <label for="form_name">Nombre *</label> <input id="form_name" type="text" name="name" class="form-control" placeholder="Por favor ingresa tu nombre *" required="required" data-error="Nombre requerido"> </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group"> <label for="form_lastname">Apellido *</label> <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Por favor ingresa tu apellido *" required="required" data-error="Apellido requerido"> </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group"> <label for="form_email">Email *</label> <input id="form_email" type="email" name="email" class="form-control" placeholder="Por favor ingresa tu email *" required="required" data-error="Email válido requerido."> </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group"> <label for="form_need">Motivo de Consulta *</label> <select id="form_need" name="need" class="form-control" required="required" data-error="Por favor especifica un motivo de consulta">
-                                                <option value="" selected disabled>--Selecciona alguna--</option>
-                                                <option>Marketing Digital</option>
-                                                <option>Desarrollo Web</option>
-                                                <option>Inbound Marketing</option>
-                                                <option>SEO (Posicionamiento Web)</option>
-												<option>Social Growth</option>
-												<option>Diseño Gráfico</option>
-												<option>Otros</option>
-                                            </select> </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group"> <label for="form_message">Mensaje *</label> <textarea id="form_message" name="message" class="form-control" placeholder="Escribe tu mensaje aquí." rows="4" required="required" data-error="Por favor, deja tu mensaje."></textarea> </div>
-                                    </div>
-                                    <div class="col-md-12"> <input type="submit" class="btn btn-success btn-send pt-2 btn-block " value="Enviar mi Consulta"> </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div> <!-- /.8 -->
-        </div> <!-- /.row-->
-    </div>
-</div>
-
+		<div class="card shadow rounded-3 my-auto">
+			<div class="card-header p-3 h4">
+				Envianos tu consulta
+			</div>
+			<div class="card-body p-4">
+				<form role="form" class="row">
+					<div class="form-group col-lg-4">
+						<label class="form-control-label" for="form-group-input">Nombre</label>
+						<input type="text" class="form-control" id="form-group-input" name="name">
+					</div>
+					<div class="form-group col-lg-4">
+						<label class="form-control-label" for="form-group-input">Email</label>
+						<input type="text" class="form-control" id="form-group-input" name="email">
+					</div>
+					<div class="form-group col-lg-4">
+						<label class="form-control-label" for="form-group-input">Motivo de Consulta</label>
+						<select size="0" class="form-control" name="reason">
+							<option value="" selected disabled>--Selecciona alguna--</option>
+                            <option>Marketing Digital</option>
+                            <option>Desarrollo Web</option>
+                            <option>Inbound Marketing</option>
+                        	<option>SEO (Posicionamiento Web)</option>
+							<option>Social Growth</option>
+							<option>Diseño Gráfico</option>
+							<option>Otros</option>
+						</select>
+					</div>
+					<div class="form-group col-lg-12">
+						<label class="form-control-label" for="form-group-input">Tu Consulta</label>
+						<textarea class="form-control" id="form-group-input" name="notes" rows="6"></textarea>
+					</div>
+					<div class="form-group col-lg-12">
+						<button class="btn btn-warning float-end mt-2" for="form-group-input">Enviar</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 	</main>
-
   <!-- Footer -->
-<footer
-          class="text-center text-lg-start text-white"
-          style="background-color: #4900F1"
-          >
-    <!-- Section: Social media -->
-    <section
-             class="d-flex justify-content-between p-4"
-             style="background-color:#D900ED; "
-             >
-      <!-- Left -->
+	<footer class="text-center text-lg-start text-white" style="background-color: #4900F1">
+    <!-- Social media -->
+    <section class="d-flex justify-content-between p-4"style="background-color:#D900ED; ">
+      <!-- Izquierda -->
       <div class="me-5">
         <span>Conéctate con nosotros en las redes sociales:</span>
       </div>
-      <!-- Left -->
-
-      <!-- Right -->
+      <!-- Derecha-->
       <div>
         <a href="" class="text-white me-4">
           <i class="fab fa-facebook-f">Facebook</i>
@@ -383,18 +365,16 @@
           <i class="fab fa-github">Github</i>
         </a>
       </div>
-      <!-- Right -->
     </section>
-    <!-- Section: Social media -->
-
-    <!-- Section: Links  -->
-    <section class="">
+    <!--Social media -->
+    <!--Links  -->
+    <section>
       <div class="container text-center text-md-start mt-5">
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
+            <!-- Contenido -->
             <h6 class="text-uppercase fw-bold">Agencia Digital Ko-Bu</h6>
             <hr
                 class="mb-4 mt-0 d-inline-block mx-auto"
@@ -405,56 +385,33 @@
             </p>
           </div>
           <!-- Grid column -->
-
           <!-- Grid column -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold">Servicios</h6>
-            <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
-            <p>
-              Marketing Digital
-            </p>
-            <p>
-              Desarrollo Web
-            </p>
-            <p>
-              Inbound Marketing
-            </p>
-            <p>
-              SEO / Posicionamiento Web
-            </p>
-			<p>
-              Social Growth
-            </p>
-			<p>
-              Diseño Gráfico
-            </p>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: white; height: 2px"/>
+			<ul>
+				<li>Marketing Digital</li>
+				<li>Desarrollo Web</li>
+				<li>Inbound Marketing</li>
+				<li>SEO / Posicionamiento Web</li>
+				<li>Social Growth</li>
+				<li>Diseño Gráfico</li>
+			</ul>
           </div>
           <!-- Grid column -->
-
           <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold">Mapa del Sitio</h6>
-            <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
-            <p>
-              <a href="./BlogTemplate/index.html" class="text-white">Blog</a>
-            </p>
-            <p>
-              <a href="#contacto" class="text-white">Contacto</a>
-            </p>
-            <p>
-              <a href="#portfolio" class="text-white">Portfolio</a>
-            </p>
-            <p>
-              <a href="#contacto" class="text-white">Ayuda</a>
-            </p>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: white; height: 2px"/>
+			<ul>
+				<li><a href="./BlogTemplate/index.html" class="text-white">Blog</a></li>
+				<li><a href="#contacto" class="text-white">Contacto</a></li>
+				<li><a href="#portfolio" class="text-white">Portfolio</a></li>
+				<li><a href="#portfolio" class="text-white">Portfolio</a></li>
+				<li><a href="#contacto" class="text-white">Ayuda</a></li>
+			</ul>
           </div>
           <!-- Grid column -->
 
@@ -462,10 +419,7 @@
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold">Contacto</h6>
-            <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: white; height: 2px"/>
             <p><i class="fas fa-home mr-3"></i>Buenos Aires 2958, Argentina</p>
             <p><i class="fas fa-envelope mr-3"></i>info@ko-bu.com</p>
             <p><i class="fas fa-phone mr-3"></i> + 54 2944 811253</p>
@@ -476,19 +430,14 @@
         <!-- Grid row -->
       </div>
     </section>
-    <!-- Section: Links  -->
-
+    <!-- Links  -->
     <!-- Copyright -->
-    <div
-         class="text-center p-3"
-         style="background-color: rgba(0, 0, 0, 0.2)"
-         >
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
       © 2021 Copyright: Todos los derechos reservados.
     </div>
     <!-- Copyright -->
-  </footer>
+ 	 </footer>
   <!-- Footer -->
-
 <!--BOOTSTRAP-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <!--WOWJS.UK-->
